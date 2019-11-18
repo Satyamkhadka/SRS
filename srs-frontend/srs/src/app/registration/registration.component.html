@@ -1,0 +1,70 @@
+<div class="jumbotron bg-warning">
+  <h3 class="text-center"><b>STUDENT REGISTRATION</b></h3>
+</div>
+
+<div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <form [formGroup]="studentForm">
+          <div *ngIf="formPane==1">
+            <div class="form-group">
+              Name: <input type="text" class="form-control" name="name" placeholder="Name" formControlName="fullname">
+            </div>
+            <div class="form-group">
+              Email: <input type="email" class="form-control" name="email" placeholder="Email" formControlName="email">
+            </div>
+            <div class="form-group">
+              Contact: <input type="text" class="form-control" name="number" placeholder="Contact"
+                formControlName="contact">
+            </div>
+            <div class="form-group">
+              Program:<select class="form-control form-control-sm" name="program" formControlName="program">
+                <option value="BBA">BBA</option>
+                <option value="BIM">BIM</option>
+                <option value="BCA">BCA</option>
+                <option value="BIT">BIT</option>
+                <option value="BHM">BHM</option>
+                <option value="BBM">BBM</option>
+                <option value="BSC_CSIT">BSC CSIT</option>
+                <option value="BBS">BBS</option>
+              </select><br>
+            </div>
+            <button class="btn btn-primary float-right" (click)="next()"> Next</button>
+          </div>
+          <div *ngIf="formPane==2">
+            <div class="form-group">
+              Certificate: <input type="file" class="form-control" name="certificate">
+            </div>
+            <div class="form-group">
+              Prevoius Degree: <input type="text" class="form-control" name="pcollege" placeholder=" +2 College Name!"
+                formControlName="previous_college">
+            </div>
+            <!-- <div class=" form-group">
+              College: <input type="text" class="form-control" name="college"
+                placeholder=" Bachelor College Name!"="true">
+            </div> -->
+            <div class="form-group">
+              For Batch:<select class="form-control" name="batch" formControlName="batch">
+                <option value="2019">2019</option>
+                <option value="2019">2020</option>
+                <option value="2019">2021</option>
+              </select><br>
+            </div>
+            <div class="btn btn-primary float-left" (click)="prev()"> Previous</div>
+
+            <button class="btn btn-primary float-right" (click)="submit(studentForm.value)"> Submit</button>
+
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+</div>

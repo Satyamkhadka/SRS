@@ -1,14 +1,14 @@
-var express= require('express');
+var express = require('express');
 const bodyParser = require('body-parser');
 
-var app=express();
+var app = express();
 app.use(bodyParser.urlencoded({
-	extended: true
+    extended: true
 }));
 app.use(bodyParser.json());
 
-const routes = require('./Routes')
-app.listen(3000,()=>{
+const routes = require('./routes')
+app.listen(3000, () => {
     console.log("listeneing at 3000");
 });
 
