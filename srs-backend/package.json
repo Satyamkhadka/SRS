@@ -1,0 +1,30 @@
+{
+  "name": "srs",
+  "version": "1.0.0",
+  "description": "This is Student Registration System made for OOAD minor internal project. This project is made using SEAN (sql-express-angular-node) stack. satyam: backend and frontend integration, bishnu: UI/UX using bootstrap, swachchhand: DBA on MySql, Dipesh: QA :D ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyamkhadka/SRS.git"
+  },
+  "keywords": [
+    "SRS",
+    "student",
+    "registration",
+    "system"
+  ],
+  "author": "satyam bishnu swachchhand dipesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyamkhadka/SRS/issues"
+  },
+  "homepage": "https://github.com/Satyamkhadka/SRS#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1"
+  }
+}
