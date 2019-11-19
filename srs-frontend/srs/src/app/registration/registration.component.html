@@ -1,7 +1,10 @@
+<app-easy-navigation></app-easy-navigation>
 <div class="jumbotron bg-warning">
   <h3 class="text-center"><b>STUDENT REGISTRATION</b></h3>
+  <div routerLink="/check-status" class="btn btn-success float-right px-2 mr-4">
+    Check status
+  </div>
 </div>
-
 <div>
 
 
@@ -38,7 +41,7 @@
           </div>
           <div *ngIf="formPane==2">
             <div class="form-group">
-              Certificate: <input type="file" class="form-control" name="certificate">
+              Certificate: <input type="file" class="form-control" name="certificate" formControlName="doc">
             </div>
             <div class="form-group">
               Prevoius Degree: <input type="text" class="form-control" name="pcollege" placeholder=" +2 College Name!"
